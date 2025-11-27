@@ -1,57 +1,60 @@
-1. Overview
+ # Customer Behavior Analysis Project
+# 🔗Overview 
 
 This project analyzes customer shopping behavior to uncover patterns that help improve sales, customer satisfaction, and loyalty.
 Using Python, SQL, and Power BI, the workflow covers data loading, cleaning, exploratory analysis, database querying, dashboard development, and creation of a final report and presentation.
-2. Dataset
 
-Name: Customer Shopping Behavior Dataset
+# 🔗 Dataset
 
-Size: 3,900 rows × 18 features 
+**Name**: Customer Shopping Behavior Dataset
 
-Source: Internal retail customer transactions
+**Size**: 3,900 rows × 18 features 
 
-Key Columns:
+**Source**: Internal retail customer transactions
 
-Demographics: age, gender, location, subscription status
+# 🔗Key Columns:
 
-Shopping: item, category, amount, size, color, season
+**Demographics**: age, gender, location, subscription status
 
-Behavior: discount usage, review ratings, previous purchases
+**Shopping**: item, category, amount, size, color, season
 
-Logistics: shipping type
-3. Tools & Technologies
+**Behavior**: discount usage, review ratings, previous purchases
 
-Python: Pandas, NumPy, Matplotlib, Seaborn
+**Logistics**: shipping type
 
-Database Systems: PostgreSQL, MySQL, SQL Server
+# 🔗 Tools & Technologies
 
-SQL Tools: pgAdmin, MySQL Workbench, SSMS
+**Python**: Pandas, NumPy, Matplotlib, Seaborn
 
-Power BI Desktop: Interactive dashboard creation
+**Database Systems**: PostgreSQL, MySQL, SQL Server
 
-Gamma.app: Automatic PPT creation
+**SQL Tools**: pgAdmin, MySQL Workbench, SSMS
 
-Jupyter Notebook : Development environment
-4. Project Steps
-4.1 Data Loading (Python)
+**Power BI Desktop**: Interactive dashboard creation
 
-Import data using Pandas
+**Jupyter Notebook** : Development environment
 
-Inspect structure: df.info(), df.describe()
+# 🔗 Project Steps
 
-Visualize distributions and detect anomalies
+ ## Data Loading (Python)
 
-Export cleaned dataset for SQL ingestion
+▪️Import data using Pandas
 
-4.2 Exploratory Data Analysis (EDA)
+▪️Inspect structure: `df.info(), df.describe()`
 
-Summary statistics for numerical columns
+▪️Visualize distributions and detect anomalies
 
-Trend and distribution charts (histograms, bar charts, box plots)
+▪️Export cleaned dataset for SQL ingestion
 
-Correlation analysis
+## Exploratory Data Analysis (EDA)
 
-Insights discovered:
+▪️Summary statistics for numerical columns
+
+▪️Trend and distribution charts (histograms, bar charts, box plots)
+
+▪️Correlation analysis
+
+**Insights discovered:**
 
 Middle-aged customers contribute highest revenue
 
@@ -59,200 +62,199 @@ Subscribers spend more and generate more revenue
 
 Express shipping users show different spending patterns
 
-4.3 Data Cleaning
+## Data Cleaning
 
-Standardized column names (snake_case)
+▪️Standardized column names (snake_case)
 
-Filled missing ratings using median per product category 
+▪️Filled missing ratings using median per product category 
 
-Removed duplicates
+▪️Removed duplicates
 
-Created engineered features:
+▪️Created engineered features:
 
-age_group
+▪️age_group
 
-purchase_frequency
+▪️purchase_frequency
 
-discount_dependency flags
+▪️discount_dependency flags
 
-Validated with summary checks
+▪️Validated with summary checks
 
-4.4 SQL Analysis
+## SQL Analysis
 
 Cleaned data was loaded into SQL for deeper analytical queries.
 Queries were written for PostgreSQL, MySQL, and SQL Server with cross-compatible syntax
-Key SQL Analyses: 
 
-Revenue by gender
+**Key SQL Analyses:** 
 
-High-spending discount users
+▪️Revenue by gender
 
-Top 5 products by review rating
+▪️High-spending discount users
 
-Standard vs express shipping comparison
+▪️Top 5 products by review rating
 
-Subscriber vs non-subscriber revenue
+▪️Standard vs express shipping comparison
 
-Discount-dependent products
+▪️Subscriber vs non-subscriber revenue
 
-Customer segmentation: New, Returning, Loyal
+▪️Discount-dependent products
 
-Top 3 products per category
+▪️Customer segmentation: New, Returning, Loyal
 
-Repeat buyer subscription likelihood
+▪️Top 3 products per category
 
-Revenue contribution by age group
-4.5 Power BI Dashboard
+▪️Repeat buyer subscription likelihood
 
-Dashboard sections include:
+▪️Revenue contribution by age group
 
-KPIs: revenue, orders, average spend
+#### Power BI Dashboard
 
-Demographics: revenue by age group, gender, location
+**Dashboard sections include:**
 
-Product Insights:
+▪️KPIs: revenue, orders, average spend
 
-Top rated products
+▪️Demographics: revenue by age group, gender, location
 
-Most purchased items
+**Product Insights:**
 
-Discount-heavy items
+▪️Top rated products
 
-Customer Segmentation: New / Returning / Loyal
+▪️Most purchased items
 
-Shipping Insights: Standard vs express spend
+▪️Discount-heavy items
 
-Subscription Analysis: total revenue & average spend
+▪️Customer Segmentation: New / Returning / Loyal
 
-Interactive Filters: category, season, shipping type
-4.6 Final Report
+▪️Shipping Insights: Standard vs express spend
 
-Based on analysis from Python, SQL, and Power BI.
-Includes:
+▪️Subscription Analysis: total revenue & average spend
 
-Business context
+▪️Interactive Filters: category, season, shipping type
+ # 🔗 Final Report
 
-EDA outputs
+**Based on analysis from Python, SQL, and Power BI.
+Includes:**
 
-SQL insights
+▪️Business context
 
-Dashboard interpretation
+▪️EDA outputs
 
-Key business recommendations (loyalty programs, discount policy optimization, targeted marketing, subscription promotion)
+▪️SQL insights
 
-Supported by visuals from the 4.7 Presentation (Gamma)
+▪️Dashboard interpretation
 
-Automatically generated PPT summarizing project
+▪️Key business recommendations (loyalty programs, discount policy optimization, targeted marketing, subscription promotion)
 
-Includes:
+**Visuals from Presentation** 
 
-Business problem
+▪️PPT summarizing project
 
-Data preparation steps
+▪️Includes:
 
-Key insights
+▪️Business problem
 
-Visual dashboards
+▪️Data preparation steps
 
-Marketing & strategic recommendationsdashboard and Python charts
-Final PPT: Customer Shopping Behavior Analysis 
+▪️Key insights
 
-Customer-Shopping-Behavior-Anal…
+ # 🔗 Dashboard Overview
 
-5. Dashboard Overview
+**Main Pages:**
 
-Main Pages:
-
-Revenue Summary
+###### Revenue Summary
 KPIs + revenue heatmap
 
-Customer Demographics
+###### Customer Demographics
 Age groups, gender split, subscription status
 
-Product Insights
+###### Product Insights
 Top 5 ratings, top 3 per category, discount dependency
 
-Shipping & Discounts
+###### Shipping & Discounts
 Standard vs express spend, discount effects
 
-Customer Segments
+###### Customer Segments
 New, Returning, Loyal counts & spend
-Key Dashboard Findings:
 
-Middle-aged customers contribute the highest revenue.
+**Key Dashboard Findings:**
 
-Subscribers generate higher lifetime value.
+▪️Middle-aged customers contribute the highest revenue.
 
-Five products exhibit high discount dependency.
+▪️Subscribers generate higher lifetime value.
 
-Loyal customers have the highest average spend.
+▪️Five products exhibit high discount dependency.
 
-Express shipping customers show different purchase patterns.
+▪️Loyal customers have the highest average spend.
 
-6. Results & Insights
+▪️Express shipping customers show different purchase patterns.
 
-Top Insights:
+# 🔗 Results & Insights
 
-Female customers generated slightly higher revenue overall 
+**Top Insights:**
 
-Discount users can still be high-spenders → refine promo strategy
+▪️Female customers generated slightly higher revenue overall 
 
-Express shipping users may represent premium customers
+▪️Discount users can still be high-spenders → refine promo strategy
 
-Subscription is correlated with higher revenue & repeat behavior
+▪️Express shipping users may represent premium customers
 
-Highest revenue age group: Middle Age segment (35–50 years)
+▪️Subscription is correlated with higher revenue & repeat behavior
 
-New customers have lower average spend; loyalty programs can improve retention
+▪️Highest revenue age group: Middle Age segment (35–50 years)
 
-Top categories and products can guide inventory decisions
-Strategic Recommendations:
+▪️New customers have lower average spend; loyalty programs can improve retention
 
-Launch targeted campaigns for high-revenue age groups
+▪️Top categories and products can guide inventory decisions
 
-Encourage subscription enrollment with benefits
+▪️Strategic Recommendations:
 
-Moderate heavy discounting on high-volume items
+▪️Launch targeted campaigns for high-revenue age groups
 
-Promote highly rated products
+▪️Encourage subscription enrollment with benefits
 
-Create loyalty rewards for returning buyers.
-7. How to Run This Project
-7.1 Requirements
+▪️Moderate heavy discounting on high-volume items
 
-Python 3.8+
+▪️Promote highly rated products
 
-Required packages (Pandas, NumPy, Matplotlib, SQLAlchemy)
+▪️Create loyalty rewards for returning buyers.
+# 🔗 How to Run This Project
+**Requirements**
 
-PostgreSQL / MySQL / SQL Server installed
+▪️Python 3.8+
+
+▪️Required packages (Pandas, NumPy, Matplotlib, SQLAlchemy)
+
+▪️PostgreSQL / MySQL / SQL Server installed
 
 Power BI Desktop
-7.2 Setup Steps
 
-Clone project folder
+# 🔗Setup Steps
 
-Install Python libraries
-Run EDA & cleaning notebook
+▪️Clone project folder
 
-Export cleaned dataset
+▪️Install Python libraries
 
-Load dataset into SQL database
+▪️Run EDA & cleaning notebook
 
-Use included .sql script
+▪️Export cleaned dataset
 
-Execute SQL queries
+▪️Load dataset into SQL database
 
-Queries located in: customer_behavior_sql_queries.sql 
+▪️Use included .sql script
 
-customer_behavior_sql_queries
+▪️Execute SQL queries
 
-Open Power BI file and refresh data source
+▪️Queries located in: customer_behavior_sql_queries.sql 
 
-Generate PPT in Gamma
+▪️customer_behavior_sql_queries
 
-Upload summary content and dashboard visuals
+▪️Open Power BI file and refresh data source
 
-Review final report and deliverables
+▪️Generate PPT
+
+▪️Upload summary content and dashboard visuals
+
+▪️Review final report and deliverables
 
 
 
