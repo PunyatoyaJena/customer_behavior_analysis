@@ -188,6 +188,9 @@ New, Returning, Loyal counts & spend
 
 ▪️Express shipping customers show different purchase patterns.
 
+<img width="1001" height="596" alt="Screenshot 2025-11-27 at 9 42 27 PM" src="https://github.com/user-attachments/assets/5e1102a5-8209-4cf7-94be-b50353b20df6" />
+
+
 # 🔗 Results & Insights
 
 **Top Insights:**
